@@ -4,7 +4,9 @@
 # requires hyper
 #
 
+SCRIPT_DIR=$(cd $(dirname $0); pwd)
+
 : "symlink"
 {
-  ln -sf ./.hyper.js ~/.hyper.js
+  ln -sf $SCRIPT_DIR/.hyper.js ~/.hyper.js
 }
